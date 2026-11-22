@@ -1,0 +1,85 @@
+{
+  "clock": {
+    "earth_ma": 4550,
+    "moon_ma": 4527
+  },
+  "bivariate": [
+    [
+      "Charleston",
+      3,
+      3
+    ],
+    [
+      "Florence",
+      1,
+      3
+    ],
+    [
+      "Cherokee",
+      null,
+      null
+    ]
+  ],
+  "minard": {
+    "start_people": 422000,
+    "end_people": 10000,
+    "people_per_mm": 10000
+  },
+  "election": [
+    [
+      "Isamaa",
+      21.5,
+      2
+    ],
+    [
+      "SDE",
+      19.3,
+      2
+    ]
+  ],
+  "webb": [
+    [
+      "NIRSpec",
+      0,
+      3,
+      0
+    ],
+    [
+      "FGS/NIRISS",
+      2,
+      1,
+      1
+    ],
+    [
+      "NIRCam",
+      1,
+      1,
+      1
+    ],
+    [
+      "MIRI",
+      1,
+      2,
+      1
+    ]
+  ],
+  "artemis": [
+    [
+      "SRB 分离",
+      "00:02:12"
+    ],
+    [
+      "主发动机关机",
+      "00:08:20"
+    ],
+    [
+      "主级与 ICPS 分离",
+      "00:08:30"
+    ]
+  ],
+  "census": [
+    1790,
+    1840,
+    1850
+  ]
+}
