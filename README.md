@@ -8,6 +8,5 @@
 | [04-统计图形分析](04-%E7%BB%9F%E8%AE%A1%E5%9B%BE%E5%BD%A2%E5%88%86%E6%9E%90/README.md) | 统计图形选择、数据字段与编码方法 |
 | [05-Gestalt视觉组织原则](05-Gestalt%E8%A7%86%E8%A7%89%E7%BB%84%E7%BB%87%E5%8E%9F%E5%88%99/README.md) | 12 项原则，每项 2 则案例，附证据与设计实践 |
 | [06-通用视觉风格克隆系统](06-%E9%80%9A%E7%94%A8%E8%A7%86%E8%A7%89%E9%A3%8E%E6%A0%BC%E5%85%8B%E9%9A%86%E7%B3%BB%E7%BB%9F/README.md) | 3 套风格档案、四版提示词与换题测试 |
-| [99-山西三座唐代木构殿宇主题信息图形设计](99-%E5%B1%B1%E8%A5%BF%E4%B8%89%E5%BA%A7%E5%94%90%E4%BB%A3%E6%9C%A8%E6%9E%84%E6%AE%BF%E5%AE%87%E4%B8%BB%E9%A2%98%E4%BF%A1%E6%81%AF%E5%9B%BE%E5%BD%A2%E8%AE%BE%E8%AE%A1/README.md) | 《唐构三殿》原版概念稿、数据与八阶段设计过程 |
 
 [教师参考仓库](https://github.com/fengbaifan/Infographic-Style-Repository)
