@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>唐构三殿 · 山西木构比较图谱</title>
+<style>
+:root{--ink:#142027;--deep:#101b21;--deep2:#16252b;--bone:#ede8da;--paper:#eae4d5;--rust:#a1392c;--fire:#ff785f;--gold:#e8c48b;--pale:#bfd0ca;--dim:#9cafab;--rule:#c5bcaa;--line:#425356;--serif:STZhongsong,"Songti SC",SimSun,serif;--sans:"Microsoft YaHei","PingFang SC",sans-serif;--mono:Consolas,"Courier New",monospace}
+*{box-sizing:border-box}body,h1,h2,h3,p,figure{margin:0}body{background:#26343b;color:var(--ink);font:18px/1.55 var(--sans)}.sheet{width:1600px;max-width:none;margin-inline:auto;background:var(--paper);overflow:hidden}.wide{padding-inline:68px}canvas{display:block}.dark{color:var(--bone);background:var(--deep)}.mono{font-family:var(--mono);font-variant-numeric:tabular-nums}.small{font-size:15px;color:var(--dim)}
+.mast{padding-top:33px;position:relative}.index{display:flex;justify-content:space-between;align-items:center;padding-bottom:16px;border-bottom:1px solid var(--line);font-size:17px;letter-spacing:.13em}.index strong{color:var(--gold);font-weight:600}.index em{font:normal 16px var(--mono);letter-spacing:.11em;color:var(--dim)}
+.titleline{display:flex;align-items:end;justify-content:space-between;gap:40px;padding:28px 0 23px}.titleline h1{font:132px/.96 var(--serif);letter-spacing:-.065em;white-space:nowrap}.titleline h1 span{color:var(--gold)}.titleline .sub{margin:16px 0 0 6px;font-size:25px;letter-spacing:.09em;color:var(--pale)}.range{text-align:right;padding-bottom:4px}.range strong{font:500 57px/.95 var(--mono);letter-spacing:-.10em;color:var(--gold)}.range p{color:var(--pale);font-size:17px;margin-top:10px}
+.study{position:relative;isolation:isolate;height:645px;overflow:hidden;border:1px solid #3a4b50;background:radial-gradient(ellipse at 63% 46%,#23383c 0%,#14252c 53%,#121e25 86%)}.study::before{content:"";position:absolute;inset:0;z-index:-1;background-image:linear-gradient(to right,#a6c6c514 1px,transparent 1px),linear-gradient(to bottom,#a6c6c514 1px,transparent 1px);background-size:36px 36px;mask-image:linear-gradient(90deg,transparent,#000 50%)}.focus{position:absolute;left:35px;top:35px;width:290px;z-index:2}.focus .prefix{font-size:15px;letter-spacing:.13em;color:var(--gold)}.focus h2{font:42px/1.12 var(--serif);margin-top:10px}.focus .lead{font-size:17px;color:var(--pale);margin-top:13px;line-height:1.65}.key{display:grid;gap:12px;margin:29px 0 0;padding:0;list-style:none}.key li{display:grid;grid-template-columns:27px 1fr;column-gap:10px;align-items:start;font-size:16px;color:var(--bone)}.key b{display:inline-grid;place-items:center;width:24px;height:23px;border:1px solid #a87f58;color:var(--gold);font:14px var(--mono)}.key small{display:block;font-size:14px;color:var(--dim);margin-top:1px}.model{position:absolute;inset:0;width:1462px;height:645px;z-index:-1}.sourceHint{position:absolute;bottom:20px;left:35px;width:265px;font-size:13px;line-height:1.55;color:#b0c1bd}.layerControl{position:absolute;bottom:18px;right:23px;display:none;align-items:center;gap:10px;color:var(--pale);font-size:13px;padding:4px 8px;background:#142127ea;border:1px solid #516568}.interactive .layerControl{display:flex}.layerControl input{width:130px;accent-color:var(--gold);cursor:pointer}.layerControl button{border:0;background:#c2a071;color:#151e22;padding:3px 7px;cursor:pointer}
+.archive{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;padding-block:20px 26px}.archive figure{display:grid;grid-template-columns:133px 1fr;min-height:85px;gap:15px;align-items:center;border-bottom:1px solid var(--line);padding-bottom:12px}.archive img{width:133px;height:80px;object-fit:cover;filter:saturate(.7);display:block}.archive h3{font:23px/1.18 var(--serif);margin-block:4px 3px}.archive .date{color:var(--gold);font-size:15px;letter-spacing:.05em}.archive .place{color:var(--dim);font-size:14px}
+.analysis{padding-block:30px 25px}.sectionhead{display:flex;justify-content:space-between;align-items:end;gap:20px;border-bottom:1px solid var(--ink);padding:0 0 11px}.sectionhead h2{font:42px/1.12 var(--serif);letter-spacing:-.035em}.sectionhead p{font-size:16px;color:#526260;text-align:right}.sectionhead .ref{font:16px var(--mono);color:var(--rust);margin-right:16px;letter-spacing:.01em}
+.axis{height:163px;position:relative;margin:13px 43px 0}.axisline{height:1.5px;position:absolute;top:66px;inset-inline:0;background:#75837a}.tick{position:absolute;top:62px;color:#586862;text-align:center;transform:translateX(-50%);font:14px var(--mono)}.tick::before{content:"";display:block;width:1px;height:12px;background:#86928a;margin:0 auto 3px}.interval{position:absolute;top:23px;height:43px;border:1px solid #a6967d;border-bottom:0;text-align:center}.interval span{background:var(--paper);padding:0 9px;position:relative;top:-13px;color:var(--rust);font:16px var(--mono)}.event{position:absolute;top:98px;transform:translateX(-50%);white-space:nowrap;text-align:center}.event.first{transform:none;text-align:left}.event.last{transform:translateX(-100%);text-align:right}.event span{font-size:15px;color:#364b4d}.event strong{display:block;color:#9b3028;font:34px/.98 var(--mono);letter-spacing:-.04em}.marker{position:absolute;top:61px;width:11px;height:11px;background:var(--rust);border:2px solid var(--paper);outline:1px solid var(--rust);transform:translateX(-50%)}
+.planwind{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);margin-bottom:30px}.plandata{padding:14px 17px 15px;display:grid;grid-template-columns:1fr 209px;gap:10px;align-items:center;min-height:145px}.plandata:first-child{padding-left:0}.plandata:not(:first-child){border-left:1px solid var(--rule)}.plandata h3{font:24px/1.2 var(--serif);white-space:nowrap}.planmetric{color:var(--rust);font:40px/1.12 var(--mono);letter-spacing:-.06em;margin-top:9px}.submetric{font-size:14px;color:#566863;margin-top:7px}.plan{align-self:center;width:209px;height:113px}
+.structure{display:grid;grid-template-columns:1.22fr 1fr;gap:29px;margin-top:18px}.structure h3{font:25px/1.2 var(--serif);margin:0 0 6px}.structure .explain{font-size:14px;color:#526260;margin-top:7px}.jointTable{width:100%;border-collapse:collapse;table-layout:fixed}.jointTable th,.jointTable td{text-align:left;border-bottom:1px solid var(--rule);padding:8px 6px;font-size:15px;font-weight:400}.jointTable thead th{color:#536460;font-size:13px}.jointTable th:nth-child(1){width:148px}.jointTable th:nth-child(2){width:100px}.jointTable th:nth-child(3){width:180px}.jointTable .spec{color:var(--rust);font:21px var(--serif);white-space:nowrap}.tokens{display:flex;gap:5px}.token{display:inline-grid;place-items:center;width:30px;height:26px;color:#264145;background:#d6dfd8;border:1px solid #a6b7ad;font-size:14px}.token.angled{background:#f0cdbd;border-color:#ce9b88;color:#8b2b24}.roofPanel{border-left:1px solid var(--rule);padding-left:25px}.endings{display:grid;grid-template-columns:1fr 1fr;gap:10px}.ending{position:relative;padding-top:5px}.ending canvas{width:255px;height:105px}.ending p{font-size:14px;color:#455653}.ending b{font:20px var(--serif);color:#192b2d;margin-right:10px}
+
+.tokens{gap:8px}.token{width:36px;height:38px;padding:0 0 2px;align-content:end;gap:0;font-size:13px;line-height:1.08}.token::before{content:"";width:17px;border-top:2px solid #426360;margin-block:0 4px}.token.angled::before{transform:rotate(21deg);border-color:#9e4030}.jointTable th,.jointTable td{padding-block:6px}
+.proportionSection{margin-top:27px}.proportion{display:grid;grid-template-columns:330px 1fr;gap:21px;margin-top:12px;padding:14px 18px 10px;background:#e2e1d2;border-bottom:1px solid #b8bfaa}.proportion h3{font:25px/1.24 var(--serif);margin:7px 0 8px}.proportionCopy p{font-size:15px;line-height:1.65;color:#405554}.proportionCopy .missing{margin-top:10px;font-size:13px;color:#536760}.proportionCopy a{color:#334d4d;text-decoration-color:#758a7e;text-underline-offset:3px}.measure{width:1060px;height:250px}
+.foot{display:grid;grid-template-columns:1.1fr 1fr;gap:32px;padding-block:20px 23px;font-size:14px;color:var(--pale);background:#18252a}.foot p{line-height:1.7}.foot b{color:var(--gold);font-weight:600;margin-right:8px}.foot a{color:var(--pale);text-underline-offset:3px}
+</style>
+</head>
+<body>
+<main class="sheet">
+  <header class="mast dark wide">
+    <div class="index"><strong>山西古建筑构造图谱</strong><em>SHANXI / TANG TIMBER HALLS</em></div>
+    <div class="titleline">
+      <div><h1>唐构<span>三殿</span></h1><p class="sub">三座山西木构的纪年、开间与铺作</p></div>
+      <div class="range"><strong id="range"></strong><p>公元纪年 · 三处样本</p></div>
+    </div>
+    <section class="study" aria-labelledby="subject">
+      <div class="focus">
+        <p class="prefix mono">SX03 · 构造分解</p>
+        <h2 id="subject">佛光寺<br>东大殿</h2>
+        <p class="lead">由屋面向下读至檐下铺作，再回到七间面阔、四间进深。</p>
+        <ol class="key">
+          <li><b>A</b><div>单檐庑殿顶<small>正脊与四向坡面</small></div></li>
+          <li><b>B</b><div>外檐柱头铺作<small>七铺作 · 双抄双下昂</small></div></li>
+          <li><b>C</b><div>外檐柱列<small>面阔七间</small></div></li>
+          <li><b>D</b><div>开间计数网格<small>7 × 4，同图面单位</small></div></li>
+        </ol>
+      </div>
+      <canvas class="model" id="model" aria-label="佛光寺东大殿的屋面、外檐铺作、外柱列和计数网格拆层轴测"></canvas>
+      <p class="sourceHint">分解距离、构件形状和屋面曲率均为示意。计数网格标注面阔与进深。</p>
+      <div class="layerControl"><label for="explode">拆层距离</label><input id="explode" type="range" min="0" max="1" value="1" step=".01"><button type="button" id="reset">复位</button></div>
+    </section>
+    <div class="archive" id="archive" aria-label="三座殿宇实景"></div>
+  </header>
+
+  <section class="analysis wide" aria-labelledby="dimensions">
+    <div class="sectionhead"><h2 id="dimensions"><span class="ref">01</span>纪年与开间</h2><p>公元年 · 每刻度十年 &nbsp; / &nbsp; 横读面阔，纵读进深</p></div>
+    <div class="axis" id="axis" aria-label="三处纪年的等比例时间轴"><div class="axisline"></div></div>
+    <div class="planwind" id="plans"></div>
+
+    <div class="sectionhead"><h2><span class="ref">02</span>同是双抄，哪里不同？</h2><p>对照外檐柱头铺作与屋顶山面</p></div>
+    <div class="structure">
+      <div>
+        <h3>柱头铺作 · 向外出跳</h3>
+        <table class="jointTable" aria-label="三座殿宇的柱头铺作比较">
+          <thead><tr><th scope="col">殿宇</th><th scope="col">铺作</th><th scope="col">构件次序</th><th scope="col">出跳数</th></tr></thead>
+          <tbody id="joints"></tbody>
+        </table>
+        <p class="explain">水平符号为抄（杪），向下倾斜为下昂。佛光寺在两抄之外另有两下昂。</p>
+      </div>
+      <div class="roofPanel">
+        <h3>从山面辨两类屋顶</h3>
+        <div class="endings">
+          <figure class="ending"><canvas id="hipGable" aria-label="歇山的山面三角形山花"></canvas><figcaption><p><b>歇山</b>山花在上、斜坡在下</p><p class="mono">SX01 · SX02</p></figcaption></figure>
+          <figure class="ending"><canvas id="hip" aria-label="庑殿山面的整面侧坡"></canvas><figcaption><p><b>庑殿</b>侧坡从脊端下至檐口</p><p class="mono">SX03</p></figcaption></figure>
+        </div>
+      </div>
+    </div>
+    <div class="proportionSection">
+      <div class="sectionhead"><h2><span class="ref">03</span>把柱高设为 1.00</h2><p>剖面高度比 · 按原文口径</p></div>
+      <div class="proportion">
+        <div class="proportionCopy">
+          <h3>屋架接近柱高，<br>还是只有六成？</h3>
+          <p>柱高、铺作高、屋架高分别着色。两图使用同一纵向尺度，轮廓用于标识构造层。</p>
+          <p class="missing">表二未列广仁王庙。柱高含普拍枋和柱础。<br><a href="https://img.dpm.org.cn/Uploads/File/2018/06/04/u5b15212a9a148.pdf">徐怡涛，《故宫博物院院刊》表二</a></p>
+        </div>
+        <canvas class="measure" id="measure" aria-label="南禅寺和佛光寺的柱高归一剖面高度比"></canvas>
+      </div>
+    </div>
+  </section>
+
+  <footer class="foot wide">
+    <p><b>数据口径</b>纪年采用文献所载的建造或重建年份。间数比为面阔间数 ÷ 进深间数。柱头铺作比较见 <a href="https://lhsr.sh.gov.cn/jnylwh/20230530/69dac267776845eeb61e69677f666a52.html">上海市绿化和市容管理局资料</a>，全过程可在来源索引中逐项定位。</p>
+    <p><b>实景摄影</b>Zeus1234（CC BY-SA 3.0）、Windmemories 与 Patrick20242023（CC BY-SA 4.0）。图面略作裁切、调色，详见照片溯源表。</p>
+  </footer>
+</main>
+<script id="hall-data" type="application/json">[{"building_id": "SX01", "building_name": "南禅寺大殿", "city": "忻州市", "county": "五台县", "year_ce": 782, "event_type": "重建", "front_bays": 3, "depth_bays": 3, "source_id": "S01", "roof_type": "单檐歇山", "roof_source_id": "S01", "short_name": "南禅寺", "bracket_puzuo": 5, "horizontal_jumps": 2, "angled_jumps": 0, "bracket_source_id": "S08", "bracket_to_column": 0.38, "roof_to_column": 0.61, "vertical_source_id": "S09", "photo": "assets/nanchan.jpg"}, {"building_id": "SX02", "building_name": "广仁王庙正殿", "city": "运城市", "county": "芮城县", "year_ce": 831, "event_type": "建造", "front_bays": 5, "depth_bays": 3, "source_id": "S02", "roof_type": "单檐歇山", "roof_source_id": "S06", "short_name": "广仁王庙", "bracket_puzuo": 5, "horizontal_jumps": 2, "angled_jumps": 0, "bracket_source_id": "S08", "bracket_to_column": null, "roof_to_column": null, "vertical_source_id": "", "photo": "assets/guangrenwang.jpg"}, {"building_id": "SX03", "building_name": "佛光寺东大殿", "city": "忻州市", "county": "五台县", "year_ce": 857, "event_type": "重建", "front_bays": 7, "depth_bays": 4, "source_id": "S03", "roof_type": "单檐庑殿", "roof_source_id": "S03", "short_name": "佛光寺", "bracket_puzuo": 7, "horizontal_jumps": 2, "angled_jumps": 2, "bracket_source_id": "S08", "bracket_to_column": 0.43, "roof_to_column": 1.03, "vertical_source_id": "S09", "photo": "assets/foguang.jpg"}]</script>
+<script src="图形绘制.js"></script>
+</body>
+</html>
