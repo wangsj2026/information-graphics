@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="180" viewBox="0 0 760 180" role="img" aria-labelledby="title desc">
+  <title id="title">闭合原则</title><desc id="desc">左 完整轮廓。右 保留四角，视觉补全缺口。</desc>
+  <rect x="1" y="1" width="758" height="178" rx="12" fill="#fcfaf4" stroke="#c8d3cf"/>
+  <g font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif"><text x="30" y="30" font-size="16" fill="#173846">A  完整轮廓</text><text x="410" y="30" font-size="16" fill="#173846">B  保留四角，视觉补全缺口</text><path d="M380 16V164" fill="none" stroke="#c8d3cf" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" /><g transform="translate(30 50)"><path d="M166 13L228 55L166 97L104 55Z" fill="none" stroke="#173846" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" /></g><g transform="translate(410 50)"><path d="M144 28L166 13L188 28M206 40L228 55L206 70M188 82L166 97L144 82M126 70L104 55L126 40" fill="none" stroke="#173846" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" /></g></g>
+</svg>

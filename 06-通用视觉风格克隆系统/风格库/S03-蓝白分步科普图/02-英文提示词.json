@@ -1,0 +1,12 @@
+{
+  "style": "Blue-and-white civic explainer",
+  "aspect_ratio": "3:2",
+  "retain": {
+    "palette": "Deep blue and bright white with restrained light-gray dividers",
+    "layout": "Landscape. Four evenly spaced steps read left to right, one pictogram and short label per step",
+    "material_and_edge": "Flat solid pictograms, clear edges and large type"
+  },
+  "new_theme": "Archival photograph digitization at a community library",
+  "content": "PHOTO DIGITIZATION; 1 PREPARE, 2 SCAN, 3 CHECK, 4 ARCHIVE",
+  "exclude": "Avoid agency marks, slogans, dates and 3D gloss"
+}

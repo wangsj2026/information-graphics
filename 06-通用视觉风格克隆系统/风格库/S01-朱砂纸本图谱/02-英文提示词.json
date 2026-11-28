@@ -1,0 +1,12 @@
+{
+  "style": "Cinnabar museum plate",
+  "aspect_ratio": "3:4",
+  "retain": {
+    "palette": "Warm cream paper, brick-red tags, pale ochre wood and fine dark ink",
+    "layout": "Portrait. Asymmetric focal field, two upper callout plates and a lower band of aligned line drawings within a thin frame",
+    "material_and_edge": "Light paper fibres, crisp fine drawings, quiet low-contrast negative space"
+  },
+  "new_theme": "An educational plate of interlocking wooden joints",
+  "content": "Mortise and tenon, cross half-lap and dovetail examples. Title WOOD JOINERY",
+  "exclude": "Exclude temple imagery and years, fabricated measurements or engineering claims, and extra text"
+}

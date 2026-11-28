@@ -1,0 +1,12 @@
+{
+  "style": "Historical flow-chart print",
+  "aspect_ratio": "3:2",
+  "retain": {
+    "palette": "Cream paper, ink black and muted ochre with fine, subdued geographic context",
+    "layout": "Landscape. Narrowing flow left to right with an analytical strip linked by thin vertical guides",
+    "material_and_edge": "Muted print texture, restrained serif annotations and stronger contrast on the main band"
+  },
+  "new_theme": "A fictional three-stop book transfer scenario",
+  "content": "LIBRARY A → HUB → LIBRARY B, title BOOK TRANSFER, marked ILLUSTRATIVE SCENARIO",
+  "exclude": "No historical place names, dates or invented scales. Use real data rendering for numerical proportions"
+}
